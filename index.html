@@ -36,7 +36,7 @@ function(Map,
       container: "viewDiv",
       map: map,
       center: [-84.574878,33.925852],
-      zoom: 12
+      zoom: 15
     });
       
  var fallcomplaints = new FeatureLayer({
@@ -46,8 +46,8 @@ function(Map,
  map.add(fallcomplaints);
  
  const dotDensityRenderer = new DotDensityRenderer({
-   referenceDotValue: 1,
-   dotSize:5,
+   referenceDotValue: 0.5,
+   dotSize:8,
   outline: null,
   attributes: [{
     field: "Point_Count", // field name for population
